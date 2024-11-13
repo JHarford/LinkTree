@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3c1a74;
+  background-image: url('./images/masked_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  padding-top: 20%;
+  min-height: 100vh;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.link {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.link:hover {
+  background-color: #0056b3;
+}
+.main-logo {
+  width: 250px;
+  margin-bottom: 2rem;
+}
+.tagline {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  font-weight: 500;
+  color: white;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.highlight {
+  color: #ffd700; /* Yellow color for 'LIFE' */
+}
+
+.social-images {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-icon {
+  width: 50px;
+}
+
+.social-handle {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 2rem;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 14px;
+  transition: background 0.3s;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  backdrop-filter: blur(5px);
+}
+.link-button:nth-child(1) {
+  background: linear-gradient(180deg, #7529aa 0%, #6b2db6 100%);
+}
+.link-button:nth-child(2) {
+  background: linear-gradient(180deg, #6b2db6 0%, #6631c1 100%);
+}
+.link-button:nth-child(3) {
+  background: linear-gradient(180deg, #6631c1 0%, #6231cc 100%);
+}
+.link-button:nth-child(4) {
+  background: linear-gradient(180deg, #6231cc 0%, #6231cc 100%);
+}
+.link-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.link-button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+.footer-logo {
+  width: 50px;
+  margin-top: 2rem;
+}
+
+.social-images a {
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.social-images a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+  .social-images {
+    gap: 0.5rem;
+  }
+
+  .social-icon {
+    width: 40px;
+  }
+
+  .link-button {
+    font-size: 1.2rem;
+  }
+}
