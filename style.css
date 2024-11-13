@@ -11,7 +11,7 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  padding-top: 20%;
+  padding-top: 20px;
   min-height: 100vh;
 }
 #container {
